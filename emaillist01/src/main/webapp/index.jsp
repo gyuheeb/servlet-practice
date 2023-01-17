@@ -1,7 +1,7 @@
 <%@page import="com.douzone.emaillist.vo.EmaillistVo"%>
 <%@page import="com.douzone.emaillist.dao.EmaillistDao"%>
 <%@ page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"" pageEncoding="UTF-8""%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<EmaillistVo> list= new EmaillistDao().findAll();
 	
