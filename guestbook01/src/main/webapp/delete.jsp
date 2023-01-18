@@ -13,7 +13,7 @@
     
     new GuestbookDao().deleteBypassword(no,password);
 
-    response.sendRedirect("/guestbook01");
+    response.sendRedirect(request.getContextPath());
   
     %>
    <!DOCTYPE html>

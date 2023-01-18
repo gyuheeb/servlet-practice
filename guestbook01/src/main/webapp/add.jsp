@@ -19,7 +19,7 @@ vo.setReg_date(reg_date);
 
 new GuestbookDao().insert(vo);
 
-response.sendRedirect("/guestbook01");
+response.sendRedirect(request.getContextPath());
 
 %>
 
@@ -31,6 +31,6 @@ response.sendRedirect("/guestbook01");
 </head>
 <body>
 	<h1>성공적으로 등록이 되었습니다.</h1>
-	<a href="/guestbook01">처음으로</a>
+	<a href="<%=request.getContextPath() %>">처음으로</a>
 </body>
 </html>

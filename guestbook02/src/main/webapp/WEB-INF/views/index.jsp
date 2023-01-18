@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<form action="/guestbook02/gb?a=add" method="post">
+<form action="<%=request.getContextPath() %>/gb?a=add" method="post">
 	<table border=1 width=500>
 		<tr>
 			<td>이름</td><td><input type="text" name="name"></td>
@@ -39,7 +39,7 @@
 				<td><%=vo.getNo() %></td>
 				<td><%=vo.getName() %></td>
 				<td><%=vo.getReg_date() %></td>
-				<td><a href="/guestbook02/gb?a=deleteform&no=<%=vo.getNo() %>">삭제</a></td>
+				<td><a href="<%=request.getContextPath() %>/gb?a=deleteform&no=<%=vo.getNo() %>">삭제</a></td>
 			</tr>
 			<tr>
 				<td colspan=4><%=vo.getMessage() %></td>
