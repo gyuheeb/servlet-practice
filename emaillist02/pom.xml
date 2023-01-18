@@ -33,19 +33,8 @@
 		    <version>2.2</version>
 		    <scope>provided</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>com.douzone</groupId>
-			<artifactId>helloweb</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.douzone</groupId>
-			<artifactId>emaillist01</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-  	</dependencies>
 	
+	</dependencies>
 	<build>
 		<finalName>emaillist02</finalName>
 		<plugins>
@@ -55,7 +44,6 @@
 				<version>3.3.2</version>
 			</plugin>
 		</plugins>
-		
 	</build>
 
 </project>
